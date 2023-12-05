@@ -1,0 +1,363 @@
+    *{
+        margin: 0;
+    }
+
+    a:link {
+        color: white;
+    }
+      
+    a:visited {
+        color: aliceblue;
+    }
+      
+    a:not(.logo-link):hover {
+        color: #8b1a1a;
+    }
+      
+    a:active {
+        color: white;
+    }
+
+    a:link, a:visited {
+        text-decoration: none;
+    }
+
+    html::-webkit-scrollbar{
+        width: 0.5rem;
+        background: black;
+        opacity: 0.0;
+        }
+
+    html::-webkit-scrollbar-thumb{
+        background: #8b1a1a;
+        border-radius: 5rem;
+    }
+
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .navbar{
+        width: 100%;
+        height: 50px;
+        background-color: #292929;
+
+    }
+    .navbar-container{
+        display: flex;
+        align-items: center;
+        padding: 0 50px;
+        height: 100%;
+        color: white;
+        font-family: 'Sen', sans-serif;
+
+    }
+
+    .logo-container{
+        flex: 1;
+    }
+
+    .logo{
+        font-size: 30px;
+        color: #8b1a1a;
+    }
+
+    .menu-container{
+        flex: 6;
+    }
+
+    .menu-list{
+        display: flex;
+        list-style: none;
+    }
+
+    .menu-list-item{
+        margin-right: 30px;
+    }
+
+    .menu-list-item.active{
+        font-weight: bold;
+    }
+
+    .profile-container{
+        flex: 2;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .profile-text-container{
+        margin: 0 20px;
+    }
+
+    .profile-picture{
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .toggle{
+        width: 40px;
+        height: 20px;
+        background-color: white;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        position: relative;
+    }
+
+    .toggle-icon{
+        color: goldenrod;
+    }
+
+    .toggle-ball{
+        width: 18px;
+        aspect-ratio: 1/1;
+        background-color: black;
+        position: absolute;
+        right: 1px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.4s ease all;
+    }
+
+    .sidebar{
+        width: 50px;
+        height: 100%;
+        background-color: #292929;
+        position: fixed;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 200px;
+    }
+
+    .left-menu-icon{
+        color: aliceblue;
+        font-size: 20px;
+        margin-bottom: 120px;
+    }
+
+    .container{
+        background-color: #151515;
+        min-height: calc(100vh - 50px);
+        color: aliceblue;
+
+    }
+
+    .content-container{
+        margin-left: 50px;
+    }
+
+    .featured-content{
+        height: 70vh;
+        padding: 50px;
+        background: linear-gradient(to bottom,rgba(0,0,0,0),#151515),url(img/deadpool.jpg);
+    }
+
+
+    .featured-title{
+        width: 400px;
+    }
+
+
+
+    .featured-desc{
+        width: 500px;
+        color: rgb(255, 255, 255);
+        margin: 30px 0;
+        font-weight: bold;
+    }
+
+    .featured-button{
+        background-color: #8b1a1a;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 15px;
+        border: none;
+        outline: none;
+        font-weight: bold;
+    }
+
+
+
+    .movie-list-container{
+        padding: 0 20px;
+    }
+
+    .movie-list{
+        display: flex;
+        align-items: center;
+        height: 300px;
+    }
+
+    .movie-list-item{
+        margin-right: 140px;
+        position: relative;
+    }
+
+    .movie-list-item:hover .movie-list-item-img{
+        transform: scale(1.1);
+        margin: 0 30px;
+        opacity: 0.5;
+    }
+
+    .movie-list-item:hover .movie-list-item-title,
+    .movie-list-item:hover .movie-list-item-desc,
+    .movie-list-item:hover .movie-list-item-button{
+        opacity: 1;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+
+    .movie-list-item-img{
+        width: 360px;
+        height: 266px;
+        object-fit: cover;
+        transition: all 0.5s ease-in-out;
+        border-radius: 5%;
+    }
+
+    .movie-list-item-title{
+        background-color: #333;
+        padding: 0 10px;
+        font-size: 32px;
+        font-weight: bold;
+        position: absolute;
+        top: 10%;
+        left: 50px;
+        opacity: 0;
+        transition: 0.5s all ease-in-out;
+        border-radius: 5%;
+    }
+
+    .movie-list-item-desc {
+        background-color: #333;
+        padding: 10px;
+        font-size: 14px;
+        position: absolute;
+        top: 30%;
+        left: 50px;
+        width: 230px;
+        opacity: 0;
+        transition: 0.5s all ease-in-out;
+        border-radius: 5%;
+    }
+
+    .movie-list-item-button{
+        padding: 10px;
+        background-color: #8b1a1a;
+        color: white;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        bottom: 20px;
+        left: 50px;
+        opacity: 0; 
+        transition: 0.5s all ease-in-out;
+    }
+
+    .container.active{
+        background-color: rgb(202, 202, 202);
+    }
+
+    .featured-content.active{
+        height: 70vh;
+        padding: 50px;
+        background: linear-gradient(to bottom,rgba(0,0,0, 0),rgb(202, 202, 202)),url(img/deadpool.jpg);
+    }
+
+    .movie-list-title.active{
+        color: black;
+    }
+
+    .navbar-container.active{
+        background-color: rgb(202, 202, 202);
+        color: black;
+        
+    }
+
+    .sidebar.active{
+        background-color: rgb(202, 202, 202);
+
+    }
+
+    .sidebar-items{
+        cursor: pointer;
+    }
+
+    .left-menu-icon.active{
+        color: black;
+    }
+
+    .toggle.active{
+        background-color: black;
+    }
+
+    .toggle-ball.active{
+        background-color: rgb(202, 202, 202);
+        transform: translateX(-20px);
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+    }
+    
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: #aaa;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+    .close:hover {
+        color: #333;
+    }
+    
+    #videoModalFeatured .modal-content {
+        max-width: 800px;
+    }
+    
+    #videoModalFeatured iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .modal-content {
+            width: 90%;
+        }
+    }
+
+    @media only screen and (max-width: 940px){
+        .menu-container{
+            display: none;
+        }
+    }

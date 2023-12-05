@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container"><h1 class="logo"><a class="logo-link" href="index.html">FILM-AH</a></h1></div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active"><a href="index.html">HOME</a></li>
+                    <li class="menu-list-item"><a href="movie.html">MOVIE</a></li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="img/profile.png" alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text">profile</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="toggle">
+                    <i class="fa-solid fa-moon toggle-icon"></i>
+                    <i class="fa-solid fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="sidebar-items"></div>
+            <i class="left-menu-icon fa-solid fa-magnifying-glass"></i>
+            <i class="left-menu-icon fa-solid fa-house"></i>
+            <i class="left-menu-icon fa-solid fa-users"></i>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content">
+            <img class="featured-title" src="img/title.png" alt="">
+            <p class="featured-desc">Deadpool 3 catapults Ryan Reynolds' wisecracking antihero into a new dimension of chaos. Packed with irreverent humor, meta twists, and unexpected adventures, this installment introduces fresh characters and promises a wild ride. Brace yourself for the next level of Deadpool mayhem in a cinematic experience that's equal parts hilarious and heart-pounding.</p>
+            <button class="featured-button" onclick="openModal()">WATCH</button>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">CHECK OUT MORE</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/TRAIler (3).png" alt="">
+                          <span class="movie-list-item-title">BLOOPERS</span>
+                            <p class="movie-list-item-desc">Watch the actors either start talking giberish or forgetting there lines</p>
+                            <button class="movie-list-item-button" onclick="openModal('bloopers')">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/TRAIler (4).png" alt="">
+                           <span class="movie-list-item-title">TRAILER</span>
+                            <p class="movie-list-item-desc">Watch the deadpool 3 trailer and see a new freindship unfold</p>
+                            <button class="movie-list-item-button" onclick="openModal('trailer')">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/TRAIler (5).png" alt="">
+                           <span class="movie-list-item-title">CLIPS</span>
+                            <p class="movie-list-item-desc">Get an idea about the deadpool 3 movie without watching it</p>
+                            <button class="movie-list-item-button" onclick="openModal('clips')">WATCH</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('other')">&times;</span>
+            <iframe id="youtubeVideo" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+    <div id="videoModalFeatured" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('featured')">&times;</span>
+            <iframe id="youtubeVideoFeatured" width="560" height="315" src="https://www.youtube.com/embed/FEATURED_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
