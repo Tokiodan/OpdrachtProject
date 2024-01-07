@@ -1,0 +1,175 @@
+#FAQ1 {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('DP3HIGHQ.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#FAQ2 {
+    background-color: #e74c3c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#FAQ3 {
+    margin: 0;
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #e74c3c;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+*{
+    margin: 0;
+}
+
+a:link {
+    color: white;
+}
+  
+a:visited {
+    color: aliceblue;
+}
+  
+a:not(.logo-link):hover {
+    color: #8b1a1a;
+}
+  
+a:active {
+    color: white;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: black;
+    opacity: 0.0;
+    }
+
+html::-webkit-scrollbar-thumb{
+    background: #8b1a1a;
+    border-radius: 5rem;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: #292929;
+
+}
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+    font-family: 'Sen', sans-serif;
+
+}
+
+.logo-container{
+    flex: 1;
+}
+
+.logo{
+    font-size: 30px;
+    color: #8b1a1a;
+}
+
+.menu-container{
+    flex: 6;
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+}
+
+.menu-list-item{
+    margin-right: 30px;
+}
+
+.menu-list-item.active{
+    font-weight: bold;
+}
+
+.profile-container{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile-text-container{
+    margin: 0 20px;
+}
+
+.profile-picture{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.toggle{
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.toggle-icon{
+    color: goldenrod;
+}
+
+.toggle-ball{
+    width: 18px;
+    aspect-ratio: 1/1;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s ease all;
+}
+
+
+
+
+
+
+
