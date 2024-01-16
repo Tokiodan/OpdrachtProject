@@ -1,0 +1,16 @@
+.movie-list {
+    display: flex;
+}
+
+.movie-list-item {
+}
+
+body {
+    background-image: url('C:\\Users\\ashut\\OneDrive - MBO Utrecht\\SD-2309B Ashutosh Bansidhar-Sharma\\niveau 4 Software Develpment\\PRO\\OpdrachtProject\\PROJECTOMENRAYAN\\img\\deadpool.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* optioneel: maakt de achtergrondafbeelding vast terwijl je naar beneden scrolt */
+}
+
+
+
